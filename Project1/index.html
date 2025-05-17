@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+
+  </head>
+  <body>
+    <header>
+      <h1>iron man</h1>
+      <nav>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h2>I'm shafqa</h2>
+        <div class="typewriter" id="typewriter"></div>
+        <div class="introAction">
+          <div class="myProj">Projects</div>
+          <div class="contactMe">Contact Me</div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="https://static.vecteezy.com/system/resources/previews/022/123/337/original/user-icon-profile-icon-account-icon-login-sign-line-vector.jpg" alt="User Image" />
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p style="max-width: 700px; margin: auto; text-align: center">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, deserunt esse veniam amet adipisci vitae natus iusto temporibus delectus enim, exercitationem neque tempora consequatur repellat accusantium animi! Perferendis, maxime magnam.
+      </p>
+    </section>
+
+    <section id="portfolio">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="filters">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('web')">Web</button>
+        <button onclick="filterProjects('design')">Design</button>
+      </div>
+      <div class="portfolio" id="portfolioContainer">
+        <div class="project" data-category="web">
+          <h3>Portfolio Website</h3>
+          <p>Modern personal site built using HTML, CSS, JS</p>
+        </div>
+        <div class="project" data-category="design">
+          <h3>UI Kit</h3>
+          <p>A set of modern UI components and layouts.</p>
+        </div>
+        <div class="project" data-category="web">
+          <h3>Blog Platform</h3>
+          <p>Clean blog with markdown editor and dark mode.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>&copy; 2025 John Doe. All rights reserved.</footer>
+  </body>
+</html>
